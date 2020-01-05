@@ -1,0 +1,46 @@
+.button {
+  width: 80px;
+  height: 80px;
+  background: #dcedc8;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+
+.button:hover {
+  background-color: #fffffb;
+}
+
+.number {
+  color: black;
+  font-size: 20px;
+  position: relative;
+}
+
+.letters {
+  color: black;
+  font-size: 10px;
+  position: relative;
+}
+
+#phone {
+  background: #aabb97;
+  width: 40%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 12%;
+  }
+
+#screen {
+  background: black;
+  width: 90px;
+  height: 30%;
+  color: white;
+}
+
+
+  
