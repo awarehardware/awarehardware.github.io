@@ -76,7 +76,8 @@ function sendAnswer() {
   answ_el = document.getElementById("screen_answer")
   quest_el = document.getElementById("screen_question")
   if(answ_el.innerHTML.toUpperCase() == currentQuestion["word"].toUpperCase()) {
-    quest_el.innerHTML = "Bravo, <a href='' class='clickable'>cliquer pour rejouer</a>"
+    //quest_el.innerHTML = "Bravo, <a href='' class='clickable'>cliquer pour rejouer</a>"
+    chooseAndSetQuestion()
   }
 }
 
