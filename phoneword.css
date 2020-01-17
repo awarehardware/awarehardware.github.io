@@ -26,23 +26,32 @@ body {
   position: relative;
 }
 
-#phone {
-  background:rgb(47, 53, 69);
-  width: 250px;
-  height: 300px;
-  padding-top: 7%;
-  padding-bottom: 7%;
-  padding-left: 2%;
-  padding-right: 2%;
-  border-radius: 20%;
-  border: solid;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-  margin: auto;
+#phone_container {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (min-width: 1080px) {
+  #phone {
+    background:rgb(47, 53, 69);
+    width: 20%;
+    height: 50%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 20%;
+    border: solid;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
+}
+
 
 #screen {
   background: rgb(97, 129, 83);
