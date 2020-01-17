@@ -18,14 +18,6 @@ var letterCnt = 0
 var currentQuestion
 var availableQuestions = [
 {
-  'word': 'Fiona',
-  'question': 'Mon babychon ?'
-},
-{
-  'word': 'Fiona',
-  'question': "La femme que j'aime ??"
-},
-{
   'word': 'Jim',
   'question': 'Le BG de Scranton ?'
 },
@@ -38,12 +30,20 @@ var availableQuestions = [
   'question': 'La meuf du BG de Scranton ?'
 },
 {
-  'word': 'Adam',
-  'question': 'Le Gay de New-York ?'
-},
-{
   'word': 'Didi',
   'question': 'Le meilleur chat ?'
+},
+{
+  'word': 'Apple',
+  'question': 'Un fruit mais aussi une marque ?'
+},
+{
+  'word': 'covoiturage',
+  'question': 'Transport en commun'
+},
+{
+  "word": "",
+  "question": "de la musique ou des cris à la fin"
 }]
 
 
@@ -71,12 +71,10 @@ document.getElementById("screen_answer").addEventListener("keypress", function(e
 }
 })
 
-
 function sendAnswer() {
   answ_el = document.getElementById("screen_answer")
   quest_el = document.getElementById("screen_question")
   if(answ_el.innerHTML.toUpperCase() == currentQuestion["word"].toUpperCase()) {
-    //quest_el.innerHTML = "Bravo, <a href='' class='clickable'>cliquer pour rejouer</a>"
     chooseAndSetQuestion()
   }
 }
