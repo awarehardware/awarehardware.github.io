@@ -38,12 +38,12 @@ var availableQuestions = [
   'question': 'Un fruit mais aussi une marque ?'
 },
 {
-  'word': 'covoiturage',
+  'word': 'Covoiturage',
   'question': 'Transport en commun'
 },
 {
-  "word": "",
-  "question": "de la musique ou des cris à la fin"
+  "word": "Avis",
+  "question": "Sur la question ou l'imposition"
 }]
 
 
