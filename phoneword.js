@@ -19,27 +19,27 @@ var currentQuestion
 var availableQuestions = [
 {
   'word': 'Jim',
-  'question': 'Le BG de Scranton ?'
+  'question': 'Le BG de Scranton.'
 },
 {
   'word': 'Oscar',
-  'question': 'Le Gay de Scranton ?'
+  'question': 'Le Gay de Scranton.'
 },
 {
   'word': 'Pam',
-  'question': 'La meuf du BG de Scranton ?'
+  'question': 'La meuf du BG de Scranton.'
 },
 {
   'word': 'Didi',
-  'question': 'Le meilleur chat ?'
+  'question': 'Le meilleur chat.'
 },
 {
   'word': 'Apple',
-  'question': 'Un fruit mais aussi une marque ?'
+  'question': 'Un fruit qui coûte cher.'
 },
 {
   'word': 'Covoiturage',
-  'question': 'Transport en commun'
+  'question': 'Transport en commun.'
 },
 {
   "word": "Avis",
@@ -63,7 +63,6 @@ function chooseAndSetQuestion() {
 
 chooseAndSetQuestion()
 
-
 document.getElementById("screen_answer").addEventListener("keypress", function(evt) {
   if (evt.which === 13) {
     evt.preventDefault();
@@ -71,11 +70,19 @@ document.getElementById("screen_answer").addEventListener("keypress", function(e
 }
 })
 
+function winScreen() {
+  document.getElementById("screen_question").innerHTML = 
+  "Bravo !</br>Je cherche un nouveau mot..." 
+  setTimeout(function() {
+    chooseAndSetQuestion()
+  }, 4000)
+}
+
 function sendAnswer() {
   answ_el = document.getElementById("screen_answer")
   quest_el = document.getElementById("screen_question")
   if(answ_el.innerHTML.toUpperCase() == currentQuestion["word"].toUpperCase()) {
-    chooseAndSetQuestion()
+    winScreen()
   }
 }
 
