@@ -10,7 +10,7 @@ body {
   border: 2px solid;
   }
 
-.text_button:hover {
+.text_button:active {
   background-color: #fffffb;
 }
 
@@ -22,7 +22,7 @@ body {
 
 .letters {
   color: black;
-  font-size: 10px;
+  font-size: 100%;
   position: relative;
 }
 
@@ -32,24 +32,22 @@ body {
 }
 
 
-@media screen and (min-width: 1080px) {
-  #phone {
-    background:rgb(47, 53, 69);
-    width: 20%;
-    height: 50%;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 20%;
-    border: solid;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-  }
+#phone {
+  background:rgb(47, 53, 69);
+  width: 230px;
+  height: 400px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20%;
+  border: solid;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 
@@ -64,6 +62,7 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 10%;
+  margin-top: 10%;
   position: relative;
   border: solid;
 }
