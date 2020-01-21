@@ -1,13 +1,13 @@
 const buttonLetters = new Map([
-  ["1", ["A", "B", "C"]],
-  ["2", ["D", "E", "F"]],
-  ["3", ["G", "H", "I"]],
-  ["4", ["J", "K", "L"]],
-  ["5", ["M", "N", "O"]],
-  ["6", ["P", "Q", "R"]],
-  ["7", ["S", "T", "U"]],
-  ["8", ["V", "W", "X"]],
-  ["9", ["Y", "Z"]]
+  ["1", []],
+  ["2", ["A", "B", "C"]],
+  ["3", ["D", "E", "F"]],
+  ["4", ["G", "H", "I"]],
+  ["5", ["J", "K", "L"]],
+  ["6", ["M", "N", "O"]],
+  ["7", ["P", "Q", "R", "S"]],
+  ["8", ["T", "U", "V"]],
+  ["9", ["W", "X", "Y", "Z"]]
 ])
 
 var currentCharacterIndex = 0
@@ -15,38 +15,7 @@ var characterBeingTyped = false
 var lastButtonPressId = ""
 var timeoutHandler
 var letterCnt = 0
-var currentQuestion
-var availableQuestions = [
-{
-  'word': 'Jim',
-  'question': 'Le BG de Scranton.'
-},
-{
-  'word': 'Oscar',
-  'question': 'Le Gay de Scranton.'
-},
-{
-  'word': 'Pam',
-  'question': 'La meuf du BG de Scranton.'
-},
-{
-  'word': 'Didi',
-  'question': 'Le meilleur chat.'
-},
-{
-  'word': 'Apple',
-  'question': 'Un fruit qui coûte cher.'
-},
-{
-  'word': 'Covoiturage',
-  'question': 'Transport en commun.'
-},
-{
-  "word": "Avis",
-  "question": "Sur la question ou l'imposition"
-}]
-
-
+var currentQuestion;
 
 function chooseAndSetQuestion() {
   while(1) {
@@ -72,10 +41,12 @@ document.getElementById("screen_answer").addEventListener("keypress", function(e
 
 function winScreen() {
   document.getElementById("screen_question").innerHTML = 
-  "Bravo !</br>Je cherche un nouveau mot..." 
-  setTimeout(function() {
-    chooseAndSetQuestion()
-  }, 4000)
+  "Bravo ! \
+  </br><a href='#' onclick='chooseAndSetQuestion()' style='color:white;'> \
+  Cliquer ici pour un nouveau mot</a>"
+  // setTimeout(function() {
+  //   chooseAndSetQuestion()
+  // }, 3000)
 }
 
 function sendAnswer() {
