@@ -1,21 +1,10 @@
-var availableQuestions = [{
-  "word": "Jim",
-  "question": "Le BG de Scranton."
-},
-{
-  "word": "Oscar",
-  "question": "Le Gay de Scranton."
-},
-{
-  "word": "Pam",
-  "question": "La meuf du BG de Scranton."
-},
+var availableQuestions = [
 {
   "word": "Didi",
   "question": "Le meilleur chat."
 },
 {
-  "word": "Apple",
+  "word": "Prune",
   "question": "Un fruit qui coûte cher."
 },
 {
