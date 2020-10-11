@@ -4,7 +4,7 @@ body {
 
 .button {
   background: rgb(210, 211, 211);
-  touch-action: manipulation;
+  touch-action: none;
 }
 
 .button_ctrl {
