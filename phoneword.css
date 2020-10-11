@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: rgba(174, 179, 182, 0.849);
 }
 
 .button {
@@ -100,6 +100,8 @@ body {
   margin-top: 10%;
   position: relative;
   border: solid;
+  text-align: center;
+  font-size: 120%;
 }
 
 #keyboard {  	
@@ -117,6 +119,10 @@ body {
   color: white;
 }
 
+#question_text {
+  margin-bottom: 10%;
+}
+
 #screen_answer {
   background-color: rgba(67, 92, 56, 0.39);
   color: rgb(207, 207, 105);
@@ -131,7 +137,7 @@ body {
   position: absolute;
   bottom: 0;
   left:0;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 #game_ctrl {
