@@ -69,7 +69,7 @@ function setQuestion() {
 function computeHint(word) {
   hint = ""
   for(var letterIndex = 0; letterIndex < word.length; letterIndex++) {
-    var letter = word[letterIndex].toUpperCase()
+    var letter = word[letterIndex].toLowerCase()
     for(var [button, letters] of buttonLetters) {
       if (letters.includes(letter)) {
         hint += button
